@@ -1,12 +1,10 @@
 # MSTestRunner examples
 
-Examples of usage of the new standalone runner of MSTest tests. 
-
-## Overview
-
 MSTestRunner is a light-weight and portable alternative to [microsoft/vstest](https://github.com/microsoft/vstest) for running tests in continuous integration pipelines, and in VisualStudio TestExplorer (Coming soon!).
 
-This runner is embedded directly in your test project, and there is no additional application (e.g. vstest.console / dotnet test) or any additional infrastructure (e.g. dotnet SDK) needed to run your tests. 
+This runner is embedded directly in your test project, and there is no additional application (e.g. vstest.console / dotnet test) or any additional infrastructure (e.g. dotnet SDK) needed to run your tests.
+
+MSTestRunner lives in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) repository, and comes bundled with MSTest in 3.2.0-preview.
 
 ## Examples
 
