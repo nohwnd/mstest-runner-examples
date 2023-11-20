@@ -40,8 +40,22 @@ This revolutionizes how you can run and ship tests, you can:
 
 ### Publish as standalone and run anywhere
 
+You can restore and publish your application as standalone, which will bundle the test application and appropriate runtime, and you can then run it anywhere, for example on Linux:
+
 ```
+PS SimpleProject1> dotnet restore --runtime linux-x64
 PS SimpleProject1> dotnet publish --runtime linux-x64 --self-contained
+
+
+# On linux (for example Ubuntu in WSL2):
+$ SimpleProject1>  /bin/Release/net8.0/linux-x64/publish/SimpleProject
+
+Microsoft(R) Testing Platform Execution Command Line Tool
+Version: 1.0.0-alpha.23567.1+9e2a929563d3929a92b57e402dceaaa1744a4ae5
+RuntimeInformation: linux-x64 - .NET 8.0.0
+Copyright(c) Microsoft Corporation.  All rights reserved.
+
+Passed! - Failed: 0, Passed: 1, Skipped: 0, Total: 1, Duration: 319ms - SimpleProject.dll (linux-x64 - .NET 8.0.0)
 ```
 
 ### Publish as single file app and run anywhere
