@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The secret sauce to enabling MSTestRunner. -->
+    <UseMSTestRunner>true</UseMSTestRunner>
+
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- All these 3 packaages can be replaced by reference to:
+        <PackageReference Include="MSTest" Version="3.2.0-preview.23570.1" />
+    -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.2.0-preview.23570.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.2.0-preview.23570.1" />
+
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />    
+  </ItemGroup>
+
+</Project>
