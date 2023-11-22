@@ -55,9 +55,3 @@ Copyright(c) Microsoft Corporation.  All rights reserved.
 
 Passed! - Failed: 0, Passed: 1, Skipped: 0, Total: 1, Duration: 319ms - SimpleProject.dll (linux-x64 - .NET 8.0.0)
 ```
-
-### Publish as single file app and run anywhere
-
-```
-PS SimpleProject1> dotnet publish --runtime linux-x64 /p:PublishSingleFile=true
-```
