@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- All these 3 packaages can be replaced by reference to:
+    <!-- All these 3 packages can be replaced by reference to:
         <PackageReference Include="MSTest" Version="3.2.0-preview.23570.1" />
     -->
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
