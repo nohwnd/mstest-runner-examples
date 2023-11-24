@@ -4,7 +4,7 @@ MSTestRunner is a light-weight and portable alternative to [microsoft/vstest](ht
 
 This runner is embedded directly in your test project, and there is no additional application (e.g. vstest.console / dotnet test) or any additional infrastructure (e.g. dotnet SDK) needed to run your tests.
 
-MSTestRunner lives in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) repository, and comes bundled with MSTest in 3.2.0-preview.
+MSTestRunner lives in [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) repository, and comes bundled with MSTest in 3.2.0-preview. This preview is available on [test-tools NuGet feed](https://pkgs.dev.azure.com/dnceng/public/_packaging/test-tools/nuget/v3/index.json).
 
 ## Examples
 
