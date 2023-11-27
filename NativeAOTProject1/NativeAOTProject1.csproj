@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <UseAppHost>true</UseAppHost>
+    <PublishAot>true</PublishAot>
+    <IsPackable>false</IsPackable>
+    <GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Testing.Framework" Version="1.0.0-alpha.23574.6" />
+    <PackageReference Include="Microsoft.Testing.Framework.SourceGeneration" Version="1.0.0-alpha.23574.6" />
+    <PackageReference Include="Microsoft.Testing.Platform.Extensions.HangDump" Version="1.0.0-alpha.23574.6" />
+    <PackageReference Include="Microsoft.Testing.Platform.Extensions.Telemetry" Version="1.0.0-alpha.23574.6" />
+    <PackageReference Include="Microsoft.Testing.Platform.MSBuild" Version="1.0.0-alpha.23574.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.Testing.Platform.Builder" />
+    <Using Include="Microsoft.Testing.Framework" />
+    <Using Include="Microsoft.Testing.Platform.Extensions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="*.launcher.config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
